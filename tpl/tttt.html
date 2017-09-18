@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jtopo-0.4.8-min.js"></script>
+</head>
+<body>
+<tr>
+    <th>身份证账号:</th>
+    <td><input id="applyCertNum" type="text" name="applyCertNum" style="width:310px;"
+               data-options="required:true"></td>
+</tr>
+<script>
+    $('#applyCertNum').bind('keypress',function(event){
+        console.log(event.keyCode)
+
+        if(event.keyCode == 13)
+
+        {
+            alert('你输入的内容为1：' + $('#applyCertNum').val());
+        }
+
+    });
+    window.onload = function(){
+        var oInput = document.getElementById("applyCertNum");
+        oInput.focus();
+
+    }
+</script>
+<p><spanssa>12</spanssa><span>sasasasa</span></p>
+<p>sasa</p>
+</body>
+</html>
